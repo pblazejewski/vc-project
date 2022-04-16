@@ -1,0 +1,94 @@
+@import url(/css/global.css);
+
+head {
+    min-width: 100vw;
+}
+
+body {
+    background-color: var(--primary-cl-300);
+}
+
+/* Tutorials section */
+.tutorials {
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tutorials, .tutorials__heading {
+    font-size: 1.8rem;
+}
+
+.tutorials__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Accordion container */
+
+.accordion {
+    width: 50vw;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+/* Accordion container */
+
+.accordion__btn {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #222;
+    color: var(--primary-cl-100);
+    text-align: left;
+    transition: background 0.2s;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.accordion__btn::after {
+    content: '\25be';   
+    float: right;
+    transform: scale(1.5);
+}
+
+.accordion__btn-active {
+    background-color: #333333;
+}
+
+.accordion__btn-active::after {
+    content: '\25b4';
+}
+
+.accordion__content {
+    background-color: #222222;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s;
+
+}
+
+.accordion__paragraph {
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+.accordion__span {
+    color: var(--primary-cl-100);
+    font-weight: 600;
+}
+
+.accordion__link {
+    color: var(--primary-cl-100);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary-cl-100);
+}
+
